@@ -203,57 +203,6 @@ const LandingPage = () => {
                     ))}
                 </div>
 
-                <div className="mb-16">
-                    <h2 className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-pink-400 to-cyan-400 mb-6 text-center uppercase tracking-wider">
-                        Join the Trend
-                    </h2>
-                    <div
-                        ref={carouselRef}
-                        className="carousel-container overflow-hidden py-4"
-                    >
-                        <div
-                            ref={innerRef}
-                            className="flex gap-6"
-                            style={{ willChange: 'transform' }}
-                        >
-                            {duplicatedVideos.map((video, index) => (
-                                <div
-                                    key={`${video.id}-${index}`}
-                                    className="flex-shrink-0 w-[280px] h-[498px] rounded-3xl overflow-hidden border-4 border-purple-500/30 shadow-2xl hover:border-purple-400/50 transition-all duration-300 hover:scale-105 bg-black"
-                                    style={{
-                                        boxShadow: '0 0 40px rgba(168, 85, 247, 0.3)'
-                                    }}
-                                >
-                                    {video.url.startsWith('/videos/') || video.url.endsWith('.mp4') ? (
-                                        <video
-                                            width="280"
-                                            height="498"
-                                            src={video.url}
-                                            title={video.title}
-                                            autoPlay
-                                            loop
-                                            muted
-                                            playsInline
-                                            className="w-full h-full object-cover"
-                                        />
-                                    ) : (
-                                        <iframe
-                                            width="280"
-                                            height="498"
-                                            src={video.url}
-                                            title={video.title}
-                                            frameBorder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowFullScreen
-                                            className="w-full h-full"
-                                        />
-                                    )}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-
                 <div className="relative bg-gradient-to-br from-slate-800/80 via-purple-900/50 to-slate-800/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-4 border-purple-500/30 overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-cyan-500/10 animate-pulse"></div>
                     <div className="absolute top-0 right-0 w-40 h-40 bg-yellow-400/10 rounded-full blur-3xl"></div>
