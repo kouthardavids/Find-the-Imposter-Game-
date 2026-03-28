@@ -51,7 +51,7 @@ const LandingPage = () => {
                 <div className="absolute bottom-1/4 right-1/3 w-0 h-0 border-l-10 border-r-10 border-b-16 border-l-transparent border-r-transparent border-b-yellow-500/30 animate-float" style={{ animationDelay: '2s' }}></div>
             </div>
 
-            <style jsx>{`
+            <style>{`
                 @keyframes float {
                     0%, 100% {
                         transform: translateY(0px) rotate(0deg);
