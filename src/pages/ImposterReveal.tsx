@@ -243,9 +243,6 @@ const ImposterReveal = () => {
                                             className="bg-gradient-to-r from-red-900/50 to-orange-900/50 backdrop-blur-sm rounded-xl p-3 sm:p-4 border-2 border-red-400/30 flex justify-center shadow-lg"
                                         >
                                             <div className="flex items-center gap-2">
-                                                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-red-600 to-orange-600 border-2 sm:border-4 border-red-400/50 shadow-xl overflow-hidden flex-shrink-0 flex items-center justify-center">
-                                                    <Eye className="text-white" size={window.innerWidth < 640 ? 20 : 24} />
-                                                </div>
                                                 <p className="text-white font-black text-xl sm:text-2xl md:text-3xl">
                                                     {imposter.value}
                                                 </p>

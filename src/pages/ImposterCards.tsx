@@ -182,9 +182,6 @@ const ImposterCards = ({ players: propPlayers, onComplete }: ImposterRevealProps
                         >
                             <div className="relative w-full h-full bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 rounded-2xl sm:rounded-3xl shadow-2xl border-2 sm:border-4 border-purple-500/30 overflow-hidden flex flex-col items-center justify-center p-4 sm:p-5 cursor-pointer select-none">
                                 <div className="relative z-10 text-center w-full">
-                                    <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 mx-auto mb-3 sm:mb-4 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center shadow-xl animate-pulse">
-                                        <EyeOff className="text-white" size={window.innerWidth < 640 ? 28 : window.innerWidth < 768 ? 32 : 40} />
-                                    </div>
                                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-2 sm:mb-3 px-2 break-words">
                                         {currentPlayer.value}
                                     </h2>
@@ -221,9 +218,6 @@ const ImposterCards = ({ players: propPlayers, onComplete }: ImposterRevealProps
                                 <div className="relative z-10 text-center w-full">
                                     {currentPlayer.role === "imposter" ? (
                                         <>
-                                            <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-3 sm:mb-4 bg-gradient-to-br from-red-600 to-orange-600 rounded-full flex items-center justify-center shadow-2xl border-2 sm:border-4 border-red-400/50 animate-pulse">
-                                                <Eye className="text-white" size={window.innerWidth < 640 ? 32 : window.innerWidth < 768 ? 40 : 48} />
-                                            </div>
                                             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-2 sm:mb-3 drop-shadow-lg">
                                                 YOU ARE
                                             </h2>
@@ -236,9 +230,6 @@ const ImposterCards = ({ players: propPlayers, onComplete }: ImposterRevealProps
                                         </>
                                     ) : (
                                         <>
-                                            <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-3 sm:mb-4 bg-gradient-to-br from-green-600 to-emerald-600 rounded-full flex items-center justify-center shadow-2xl border-2 sm:border-4 border-green-400/50">
-                                                <Users className="text-white" size={window.innerWidth < 640 ? 32 : window.innerWidth < 768 ? 40 : 48} />
-                                            </div>
                                             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-3 sm:mb-4 drop-shadow-lg">
                                                 THE WORD IS
                                             </h2>
